@@ -26,7 +26,7 @@ test.describe('Rebet Navigation Tests', () => {
           
           expect(hasHeading || hasContent).toBe(true);
         } else {
-          console.log('ℹ️ Contact link clicked but navigation did not occur');
+          console.log('Contact link clicked but navigation did not occur');
           // Still pass test if link exists but doesn't navigate
           expect(true).toBe(true);
         }

@@ -42,10 +42,10 @@ export default defineConfig({
     trace: 'on-first-retry',
     
     // Global timeout for each action (e.g., click, fill, etc.)
-    actionTimeout: 30000,
+    actionTimeout: 45000,
     
     // Global timeout for navigation (e.g., goto, reload, etc.)
-    navigationTimeout: 30000,
+    navigationTimeout: 60000,
   },
 
   // Configure projects for major browsers
@@ -61,7 +61,10 @@ export default defineConfig({
       name: 'firefox',
       use: { 
         ...devices['Desktop Firefox'],
-        hasTouch: true  // Enable touch support
+        hasTouch: true,  // Enable touch support
+        // Firefox-specific timeout settings (slower browser)
+        actionTimeout: 60000,
+        navigationTimeout: 90000,
       },
     },
     {
