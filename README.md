@@ -1,0 +1,1 @@
+# React-native-nextjs-e2e-automation
