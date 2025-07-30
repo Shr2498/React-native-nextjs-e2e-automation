@@ -16,7 +16,7 @@ test.describe('Rebet Homepage', () => {
     await expect(headings.first()).toBeVisible({ timeout: 10000 });
     
     // Log success for debugging
-    console.log('✅ Homepage loaded successfully');
+    console.log('Homepage loaded successfully');
   });
 
   test('should find Rebet branding and content', async ({ page }) => {
@@ -28,7 +28,7 @@ test.describe('Rebet Homepage', () => {
     const bodyContent = page.locator('body');
     await expect(bodyContent).toContainText(/rebet/i);
     
-    console.log('✅ Rebet branding found');
+    console.log('Rebet branding found');
   });
 
   test('should have main call-to-action elements', async ({ page }) => {
@@ -46,7 +46,7 @@ test.describe('Rebet Homepage', () => {
       if (await button.isVisible().catch(() => false)) {
         await expect(button).toBeEnabled();
         foundButton = true;
-        console.log('✅ Found CTA button');
+        console.log('Found CTA button');
         break;
       }
     }
@@ -55,7 +55,7 @@ test.describe('Rebet Homepage', () => {
     if (!foundButton) {
       const anyButton = page.locator('button, a[href]').first();
       await expect(anyButton).toBeVisible();
-      console.log('✅ Found generic button/link');
+      console.log('Found generic button/link');
     }
   });
 
@@ -73,7 +73,7 @@ test.describe('Rebet Homepage', () => {
     for (const content of sportsContent) {
       if (await content.isVisible().catch(() => false)) {
         foundContent = true;
-        console.log('✅ Found sports/gaming content');
+        console.log('Found sports/gaming content');
         break;
       }
     }
@@ -97,7 +97,7 @@ test.describe('Rebet Homepage', () => {
     expect(hasFooter || hasCopyright).toBeTruthy();
     
     if (hasFooter || hasCopyright) {
-      console.log('✅ Footer section found');
+      console.log('Footer section found');
     }
   });
 
@@ -118,7 +118,7 @@ test.describe('Rebet Homepage', () => {
         const img = images.nth(i);
         await expect(img).toBeVisible();
       }
-      console.log('✅ Images are loading properly');
+      console.log('Images are loading properly');
     }
   });
 
@@ -136,6 +136,6 @@ test.describe('Rebet Homepage', () => {
     const viewportWidth = await page.evaluate(() => window.innerWidth);
     
     expect(bodyWidth).toBeLessThanOrEqual(viewportWidth + 20); // Allow small margin
-    console.log('✅ Mobile responsive design verified');
+    console.log('Mobile responsive design verified');
   });
 });

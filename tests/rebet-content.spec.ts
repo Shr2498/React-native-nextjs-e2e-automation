@@ -33,7 +33,7 @@ test.describe('Rebet Website Content Validation', () => {
     }
 
     expect(foundContent).toBeTruthy();
-    console.log('✅ Social sportsbook content found');
+    console.log('Social sportsbook content found');
   });
 
   test('should display casino games content', async ({ page }) => {
@@ -53,7 +53,7 @@ test.describe('Rebet Website Content Validation', () => {
       const element = page.locator(`text=/${term}/i`).first();
       if (await element.isVisible().catch(() => false)) {
         foundCasinoContent = true;
-        console.log(`✅ Found casino content: ${term}`);
+        console.log(`Found casino content: ${term}`);
         break;
       }
     }
@@ -74,7 +74,7 @@ test.describe('Rebet Website Content Validation', () => {
     const hasStarImages = await starImages.isVisible().catch(() => false);
     
     expect(hasReviewSection || hasStarImages).toBeTruthy();
-    console.log('✅ User reviews section found');
+    console.log('User reviews section found');
   });
 
   test('should have app download links', async ({ page }) => {
@@ -90,12 +90,12 @@ test.describe('Rebet Website Content Validation', () => {
     
     if (hasAppStore) {
       await expect(appStoreLink).toHaveAttribute('href', /apps\.apple\.com/);
-      console.log('✅ App Store link found');
+      console.log('App Store link found');
     }
     
     if (hasPlayStore) {
       await expect(playStoreLink).toHaveAttribute('href', /play\.google\.com/);
-      console.log('✅ Google Play Store link found');
+      console.log('Google Play Store link found');
     }
   });
 
@@ -124,15 +124,15 @@ test.describe('Rebet Website Content Validation', () => {
         // Check if we navigated to play.rebet.app
         const currentUrl = page.url();
         if (currentUrl.includes('play.rebet.app')) {
-          console.log('✅ Successfully navigated to play.rebet.app');
+          console.log('Successfully navigated to play.rebet.app');
         } else {
-          console.log('ℹ️ Button clicked successfully');
+          console.log('Button clicked successfully');
         }
         
         clickedButton = true;
         break;
       } catch (error: unknown) {
-        console.log('ℹ️ Error clicking button, trying next', error);
+        console.log('Error clicking button, trying next', error);
         continue;
       }
     }
@@ -167,9 +167,9 @@ test.describe('Rebet Website Content Validation', () => {
       }
       
       expect(foundQuestions).toBeGreaterThan(0);
-      console.log(`✅ Found ${foundQuestions} FAQ questions`);
+      console.log(`Found ${foundQuestions} FAQ questions`);
     } else {
-      console.log('ℹ️ FAQ section not immediately visible');
+      console.log('FAQ section not immediately visible');
     }
   });
 });
