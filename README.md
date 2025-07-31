@@ -2,393 +2,392 @@
 
 A comprehensive end-to-end testing framework for the Rebet.app website, built with Playwright and TypeScript.
 
-## 🎯 About Rebet.app
+## About Rebet.app
 
-**Rebet.app** is a social ### **User Journey Analysis** (`user-journey-analysis.spec.ts`)
-- ✅ Complete user discovery journey
-- ✅ Mobile app promotion effectiveness
-- ✅ Conversion funnel optimization
-- ✅ Competitive positioning analysis
-- ✅ Brand consistency validation
-
-## 🛠️ Troubleshooting
-
-### If npm commands don't work:
-1. Make sure Node.js is installed: https://nodejs.org/
-2. Restart Command Prompt after installing Node.js
-3. Check PATH environment variable includes Node.js
-
-### If tests fail:
-1. Check internet connection (tests run against live site)
-2. Run with `--headed` flag to see what's happening
-3. Check test-results folder for screenshots/videos
-4. Update selectors if website structure changed
-
-### Common Commands for Debugging:
-```cmd
-# Run single test with debug info
-npx playwright test homepage.spec.ts --headed --debug
-
-# Run tests with trace
-npx playwright test --trace on
-
-# Show Playwright UI for debugging
-npx playwright test --ui
-```
-
-## 🔧 Advanced Configurationetting and casino gaming platform featuring:
-- **WordPress-based marketing website** promoting the gaming platform
-- **Social sports betting** with community features
-- **Casino-style games** (Plinko, slots, table games, live dealer)
-- **Mobile apps** available on iOS and Android
-- **Social features** (following, commenting, sharing picks)
-- **Free-to-play gaming** with virtual currency
-
-## 🛠️ Technology Stack Analysis
-
-- **Frontend**: WordPress with custom theme
-- **Assets**: Optimized images, SVGs, WebP format
-- **Mobile Apps**: React Native (iOS/Android)
-- **Main Platform**: React/Next.js based (play.rebet.app)
-
-## 🚀 Automation Framework Features
-
-### ✅ Comprehensive Web Testing (Playwright)
-- **Cross-browser testing** (Chrome, Firefox, Safari)
-- **Mobile responsiveness** across multiple device types
-- **Performance monitoring** with Core Web Vitals
-- **Accessibility testing** with WCAG compliance
-- **Security validation** and compliance checks
-- **Visual regression testing**
-
-### 📱 Mobile & Cross-Platform Testing
-- **Responsive design** validation across 7+ viewports
-- **Touch interaction** testing
-- **Mobile app promotion** validation
-- **App store links** verification
-
-### 🔧 Professional Quality Assurance
-- **TypeScript** for type safety and maintainability
-- **ESLint + Prettier** for code quality
-- **GitHub Actions** CI/CD pipeline ready
-- **Comprehensive reporting** with Allure integration
-
-## � Quick Start Guide
-
-### Prerequisites
-- Node.js 18+ installed
-- Git installed
-
-### Option 1: Automated Setup (Recommended)
-
-1. **Double-click `setup.bat`** or run in Command Prompt:
-   ```cmd
-   setup.bat
-   ```
-   This will automatically:
-   - Install all npm dependencies
-   - Install Playwright browsers
-   - Create .env file from template
-   - Display available commands
-
-### Option 2: Manual Setup
-
-1. **Open Command Prompt** and navigate to project folder:
-   ```cmd
-   cd c:\Users\13108\Projects\React-native-nextjs-e2e-automation
-   ```
-
-2. **Install dependencies:**
-   ```cmd
-   npm install
-   ```
-
-3. **Install Playwright browsers:**
-   ```cmd
-   npx playwright install
-   ```
-
-4. **Copy environment file:**
-   ```cmd
-   copy .env.example .env
-   ```
-
-### Running Tests
-
-#### Easy Way (Interactive Menu)
-1. **Double-click `run-tests.bat`** or run:
-   ```cmd
-   run-tests.bat
-   ```
-   Select from the interactive menu.
-
-#### Professional Test Execution
-For comprehensive testing with professional reporting:
-```bash
-# Windows Command Prompt
-run-tests-professional.bat
-
-# PowerShell (if execution policy allows)
-.\run-tests-professional.bat
-
-# Manual execution
-npx playwright test --project=chromium --project=firefox --reporter=html,allure-playwright
-```
-
-#### Command Line Options
-```cmd
-# Run all tests
-npm test
-
-# Run tests with browser visible
-npm run test:headed
-
-# Run tests with Playwright UI
-npm run test:ui
-
-# Run mobile tests only
-npm run test:mobile
-
-# Run specific test file
-npx playwright test homepage.spec.ts
-
-# Generate test code interactively
-npm run test:codegen
-
-# View test report
-npm run test:report
-```
-
-### Viewing Results
-
-After running tests, view results:
-
-1. **HTML Report:**
-   ```cmd
-   npm run test:report
-   ```
-
-2. **Check test-results folder** for screenshots and videos of failed tests
-
-3. **Allure Report** (if configured):
-   ```cmd
-   npx allure serve allure-results
-   ```
-
-## �📁 Project Structure
-
-```
-react-native-nextjs-e2e-automation/
-├── tests/                          # Test suites
-│   ├── homepage.spec.ts            # Homepage functionality tests
-│   ├── advanced-user-flows.spec.ts # User journey and conversion tests
-│   ├── performance-accessibility.spec.ts # Performance and accessibility
-│   ├── cross-platform-gaming.spec.ts     # Gaming features and devices
-│   ├── security-compliance.spec.ts       # Security and compliance
-│   ├── user-journey-analysis.spec.ts     # End-to-end user experience
-│   ├── navigation.spec.ts          # Navigation and routing tests
-│   ├── mobile.spec.ts              # Mobile responsiveness tests
-│   └── quick-validation.spec.ts    # Basic connectivity tests
-├── utils/                          # Helper utilities and page objects
-│   └── helpers.ts                  # Common test helpers and utilities
-├── .github/workflows/              # CI/CD configuration
-│   └── playwright.yml              # GitHub Actions workflow
-├── playwright.config.ts            # Playwright configuration
-├── setup.bat                       # Automated setup script
-├── run-tests-professional.bat      # Professional test runner
-└── package.json                    # Dependencies and scripts
-```
-
-## � Test Coverage
-
-### **Foundation Tests** (`homepage.spec.ts`)
-- ✅ Page loading and basic functionality validation
-- ✅ Rebet branding and content verification
-- ✅ Call-to-action elements testing
-- ✅ Sports and gaming content detection
-- ✅ Footer and navigation validation
-- ✅ Image loading optimization
-- ✅ Mobile responsiveness verification
-
-### **Advanced User Flows** (`advanced-user-flows.spec.ts`)
-- ✅ Complete user signup journey testing
-- ✅ Social features and user reviews validation
-- ✅ Gaming content and features verification
-- ✅ Cross-platform app promotion testing
-- ✅ Promotional content and CTA effectiveness
-
-### **Performance & Accessibility** (`performance-accessibility.spec.ts`)
-- ✅ Core Web Vitals measurement (FCP, LCP)
-- ✅ Accessibility compliance testing
-- ✅ Network conditions and resilience
-- ✅ SEO optimization validation
-- ✅ Error handling and edge cases
-
-### **Cross-Platform Gaming** (`cross-platform-gaming.spec.ts`)
-- ✅ Browser-specific feature testing
-- ✅ Multi-resolution responsive design
-- ✅ Touch interaction validation
-- ✅ Gaming platform features detection
-- ✅ Social betting features validation
-
-### **Security & Compliance** (`security-compliance.spec.ts`)
-- ✅ SSL certificate and HTTPS validation
-- ✅ Security headers analysis
-- ✅ Form security and data handling
-- ✅ Cookie compliance and privacy
-- ✅ Responsible gaming compliance
-- ✅ API endpoint security testing
+**Rebet.app** is a social
 
 ### **User Journey Analysis** (`user-journey-analysis.spec.ts`)
-- ✅ Complete user discovery journey
-- ✅ Mobile app promotion effectiveness
-- ✅ Conversion funnel optimization
-- ✅ Competitive positioning analysis
-- ✅ Brand consistency validation
+- Complete user discovery journey
+- Mobileapppromotioneffectiveness
+- Conversionfunneloptimization
+- Competitivepositioninganalysis
+- Brandconsistencyvalidation
 
-## 🔧 Configuration
+##🛠️Troubleshooting
 
-### Playwright Configuration
-The `playwright.config.ts` file contains:
-- **Multiple browser support** (Chrome, Firefox, Safari)
-- **Mobile device emulation**
-- **Screenshot and video recording**
-- **Parallel test execution**
-- **Custom timeouts and retries**
+###Ifnpmcommandsdon'twork:
+1.MakesureNode.jsisinstalled:https://nodejs.org/
+2.RestartCommandPromptafterinstallingNode.js
+3.CheckPATHenvironmentvariableincludesNode.js
 
-### Environment Variables
-Configure in `.env` file:
-- `BASE_URL`: Target website URL
-- `TEST_USER_EMAIL`: Test credentials (if needed)  
-- `HEADLESS`: Run tests in headless mode
-- `MAX_WORKERS`: Parallel execution workers
+###Iftestsfail:
+1.Checkinternetconnection(testsrunagainstlivesite)
+2.Runwith`--headed`flagtoseewhat'shappening
+3.Checktest- resultsfolderforscreenshots/videos
+4.Updateselectorsifwebsitestructurechanged
 
-### Cross-Browser Testing
-- ✅ **Chrome/Chromium**: Primary browser testing
-- ✅ **Firefox**: Cross-browser compatibility
-- ✅ **Safari**: WebKit engine validation
-- ✅ **Mobile Chrome**: Android mobile simulation
-- ✅ **Mobile Safari**: iOS mobile simulation
+###CommonCommandsforDebugging:
+```cmd
+#Runsingletestwithdebuginfo
+npxplaywrighttesthomepage.spec.ts--headed--debug
 
-### Device Testing Matrix
-- 📱 **Mobile Phones**: 320px - 480px (Portrait/Landscape)
-- 📊 **Tablets**: 768px - 1024px (Portrait/Landscape)
-- 💻 **Desktop**: 1280px - 2560px (Various resolutions)
-- 🖥️ **4K Displays**: Ultra-high resolution testing
+#Runtestswithtrace
+npxplaywrighttest--traceon
 
-## 🚀 CI/CD Pipeline
-
-GitHub Actions workflow automatically:
-- **Runs tests** on push/PR to main branch
-- **Tests multiple browsers** in parallel
-- **Daily scheduled runs** for monitoring
-- **Generates reports** and artifacts
-- **Accessibility testing**
-- **Performance monitoring**
-
-## 📈 Advanced Features
-
-### Visual Testing
-```bash
-# Take screenshots for comparison
-npx playwright test --update-snapshots
-
-# Compare visual differences
-npx playwright test --reporter=html
+#ShowPlaywrightUIfordebugging
+npxplaywrighttest--ui
 ```
 
-### API Testing Integration
+##AdvancedConfiguration
+- **WordPress-basedmarketingwebsite**promotingthegamingplatform
+- **Socialsportsbetting**withcommunityfeatures
+- **Casino- stylegames**(Plinko,slots,tablegames,livedealer)
+- **Mobileapps**availableoniOSandAndroid
+- **Socialfeatures**(following,commenting,sharingpicks)
+- **Free-to-playgaming**withvirtualcurrency
+
+## Technology Stack Analysis
+
+- **Frontend**:WordPresswithcustomtheme
+- **Assets**:Optimizedimages,SVGs,WebPformat
+- **MobileApps**:ReactNative(iOS/Android)
+- **MainPlatform**:React/Next.jsbased(play.rebet.app)
+
+##AutomationFrameworkFeatures
+
+###ComprehensiveWebTesting(Playwright)
+- **Cross- browsertesting**(Chrome,Firefox,Safari)
+- **Mobileresponsiveness**acrossmultipledevicetypes
+- **Performancemonitoring**withCoreWebVitals
+- **Accessibilitytesting**withWCAGcompliance
+- **Securityvalidation**andcompliancechecks
+- **Visualregressiontesting**
+
+###Mobile&Cross- PlatformTesting
+- **Responsivedesign**validationacross7+viewports
+- **Touchinteraction**testing
+- **Mobileapppromotion**validation
+- **Appstorelinks**verification
+
+###ProfessionalQualityAssurance
+- **TypeScript**fortypesafetyandmaintainability
+- **ESLint+Prettier**forcodequality
+- **GitHubActions**CI/CDpipelineready
+- **Comprehensivereporting**withAllureintegration
+
+##�QuickStartGuide
+
+###Prerequisites
+- Node.js18+installed
+- Gitinstalled
+
+###Option1:AutomatedSetup(Recommended)
+
+1.**Double- click`setup.bat`**orruninCommandPrompt:
+```cmd
+setup.bat
+```
+Thiswillautomatically:
+- Installallnpmdependencies
+- InstallPlaywrightbrowsers
+- Create.envfilefromtemplate
+- Displayavailablecommands
+
+###Option2:ManualSetup
+
+1.**OpenCommandPrompt**andnavigatetoprojectfolder:
+```cmd
+cdc:\Users\13108\Projects\React- native- nextjs- e2e- automation
+```
+
+2.**Installdependencies:**
+```cmd
+npminstall
+```
+
+3.**InstallPlaywrightbrowsers:**
+```cmd
+npxplaywrightinstall
+```
+
+4.**Copyenvironmentfile:**
+```cmd
+copy.env.example.env
+```
+
+###RunningTests
+
+####EasyWay(InteractiveMenu)
+1.**Double- click`run- tests.bat`**orrun:
+```cmd
+run- tests.bat
+```
+Selectfromtheinteractivemenu.
+
+####ProfessionalTestExecution
+Forcomprehensivetestingwithprofessionalreporting:
+```bash
+#WindowsCommandPrompt
+run- tests- professional.bat
+
+#PowerShell(ifexecutionpolicyallows)
+.\run- tests- professional.bat
+
+#Manualexecution
+npxplaywrighttest--project=chromium--project=firefox--reporter=html,allure- playwright
+```
+
+####CommandLineOptions
+```cmd
+#Runalltests
+npmtest
+
+#Runtestswithbrowservisible
+npmruntest:headed
+
+#RuntestswithPlaywrightUI
+npmruntest:ui
+
+#Runmobiletestsonly
+npmruntest:mobile
+
+#Runspecifictestfile
+npxplaywrighttesthomepage.spec.ts
+
+#Generatetestcodeinteractively
+npmruntest:codegen
+
+#Viewtestreport
+npmruntest:report
+```
+
+###ViewingResults
+
+Afterrunningtests,viewresults:
+
+1.**HTMLReport:**
+```cmd
+npmruntest:report
+```
+
+2.**Checktest- resultsfolder**forscreenshotsandvideosoffailedtests
+
+3.**AllureReport**(ifconfigured):
+```cmd
+npxallureserveallure- results
+```
+
+##ProjectStructure
+
+```
+react- native- nextjs- e2e- automation/
+├──tests/#Testsuites
+│├──homepage.spec.ts#Homepagefunctionalitytests
+│├──advanced- user- flows.spec.ts#Userjourneyandconversiontests
+│├──performance- accessibility.spec.ts#Performanceandaccessibility
+│├──cross- platform- gaming.spec.ts#Gamingfeaturesanddevices
+│├──security- compliance.spec.ts#Securityandcompliance
+│├──user- journey- analysis.spec.ts#End-to-enduserexperience
+│├──navigation.spec.ts#Navigationandroutingtests
+│├──mobile.spec.ts#Mobileresponsivenesstests
+│└──quick- validation.spec.ts#Basicconnectivitytests
+├──utils/#Helperutilitiesandpageobjects
+│└──helpers.ts#Commontesthelpersandutilities
+├──.github/workflows/#CI/CDconfiguration
+│└──playwright.yml#GitHubActionsworkflow
+├──playwright.config.ts#Playwrightconfiguration
+├──setup.bat#Automatedsetupscript
+├──run- tests- professional.bat#Professionaltestrunner
+└──package.json#Dependenciesandscripts
+```
+
+##TestCoverage
+
+###**FoundationTests**(`homepage.spec.ts`)
+- Pageloadingandbasicfunctionalityvalidation
+- Rebetbrandingandcontentverification
+- Call-to-actionelementstesting
+- Sportsandgamingcontentdetection
+- Footerandnavigationvalidation
+- Imageloadingoptimization
+- Mobileresponsivenessverification
+
+###**AdvancedUserFlows**(`advanced- user- flows.spec.ts`)
+- Completeusersignupjourneytesting
+- Socialfeaturesanduserreviewsvalidation
+- Gamingcontentandfeaturesverification
+- Cross- platformapppromotiontesting
+- PromotionalcontentandCTAeffectiveness
+
+###**Performance&Accessibility**(`performance- accessibility.spec.ts`)
+- CoreWebVitalsmeasurement(FCP,LCP)
+- Accessibilitycompliancetesting
+- Networkconditionsandresilience
+- SEOoptimizationvalidation
+- Errorhandlingandedgecases
+
+###**Cross- PlatformGaming**(`cross- platform- gaming.spec.ts`)
+- Browser- specificfeaturetesting
+- Multi- resolutionresponsivedesign
+- Touchinteractionvalidation
+- Gamingplatformfeaturesdetection
+- Socialbettingfeaturesvalidation
+
+###**Security&Compliance**(`security- compliance.spec.ts`)
+- SSLcertificateandHTTPSvalidation
+- Securityheadersanalysis
+- Formsecurityanddatahandling
+- Cookiecomplianceandprivacy
+- Responsiblegamingcompliance
+- APIendpointsecuritytesting
+
+###**UserJourneyAnalysis**(`user- journey- analysis.spec.ts`)
+- Completeuserdiscoveryjourney
+- Mobileapppromotioneffectiveness
+- Conversionfunneloptimization
+- Competitivepositioninganalysis
+- Brandconsistencyvalidation
+
+##Configuration
+
+###PlaywrightConfiguration
+The`playwright.config.ts`filecontains:
+- **Multiplebrowsersupport**(Chrome,Firefox,Safari)
+- **Mobiledeviceemulation**
+- **Screenshotandvideorecording**
+- **Paralleltestexecution**
+- **Customtimeoutsandretries**
+
+###EnvironmentVariables
+Configurein`.env`file:
+- `BASE_URL`:TargetwebsiteURL
+- `TEST_USER_EMAIL`:Testcredentials(ifneeded)
+- `HEADLESS`:Runtestsinheadlessmode
+- `MAX_WORKERS`:Parallelexecutionworkers
+
+###Cross- BrowserTesting
+- **Chrome/Chromium**:Primarybrowsertesting
+- **Firefox**:Cross- browsercompatibility
+- **Safari**:WebKitenginevalidation
+- **MobileChrome**:Androidmobilesimulation
+- **MobileSafari**:iOSmobilesimulation
+
+###DeviceTestingMatrix
+- **MobilePhones**:320px- 480px(Portrait/Landscape)
+- **Tablets**:768px- 1024px(Portrait/Landscape)
+- **Desktop**:1280px- 2560px(Variousresolutions)
+- **4KDisplays**:Ultra- highresolutiontesting
+
+##CI/CDPipeline
+
+GitHubActionsworkflowautomatically:
+- **Runstests**onpush/PRtomainbranch
+- **Testsmultiplebrowsers**inparallel
+- **Dailyscheduledruns**formonitoring
+- **Generatesreports**andartifacts
+- **Accessibilitytesting**
+- **Performancemonitoring**
+
+##AdvancedFeatures
+
+###VisualTesting
+```bash
+#Takescreenshotsforcomparison
+npxplaywrighttest--update- snapshots
+
+#Comparevisualdifferences
+npxplaywrighttest--reporter=html
+```
+
+###APITestingIntegration
 ```typescript
-// Example API test integration
-test('should validate API endpoints', async ({ request }) => {
-  const response = await request.get('/api/health');
-  expect(response.status()).toBe(200);
+//ExampleAPItestintegration
+test('shouldvalidateAPIendpoints',async({request})=>{
+constresponse=awaitrequest.get('/api/health');
+expect(response.status()).toBe(200);
 });
 ```
 
-### Custom Selectors
+###CustomSelectors
 ```typescript
-// Page Object Model example
-class RebetHomePage {
-  constructor(private page: Page) {}
-  
-  async clickPlayNow() {
-    await this.page.locator('[data-testid="play-now"]').click();
-  }
+//PageObjectModelexample
+classRebetHomePage{
+constructor(privatepage:Page){}
+
+asyncclickPlayNow(){
+awaitthis.page.locator('[data- testid="play- now"]').click();
+}
 }
 ```
 
-## 🛡️ Best Practices
+##BestPractices
 
-### Test Organization
-- **Descriptive test names** explaining what is being tested
-- **Page Object Model** for reusable components
-- **Helper functions** for common actions
-- **Data-driven testing** with external test data
+###TestOrganization
+- **Descriptivetestnames**explainingwhatisbeingtested
+- **PageObjectModel**forreusablecomponents
+- **Helperfunctions**forcommonactions
+- **Data- driventesting**withexternaltestdata
 
-### Reliability
-- **Proper waits** for elements and network
-- **Retry mechanisms** for flaky tests
-- **Error handling** and cleanup
-- **Isolated test execution**
+###Reliability
+- **Properwaits**forelementsandnetwork
+- **Retrymechanisms**forflakytests
+- **Errorhandling**andcleanup
+- **Isolatedtestexecution**
 
-### Maintenance
-- **Regular updates** of dependencies
-- **Test review** and refactoring
-- **Documentation updates**
-- **Performance monitoring**
+###Maintenance
+- **Regularupdates**ofdependencies
+- **Testreview**andrefactoring
+- **Documentationupdates**
+- **Performancemonitoring**
 
-## � Next Steps
+##NextSteps
 
-1. **Run the setup.bat** to get started
-2. **Try running tests** with run-tests.bat
-3. **Explore the test files** in the `tests/` folder
-4. **Customize tests** for your specific needs
-5. **Add new test scenarios** as needed
+1.**Runthesetup.bat**togetstarted
+2.**Tryrunningtests**withrun- tests.bat
+3.**Explorethetestfiles**inthe`tests/`folder
+4.**Customizetests**foryourspecificneeds
+5.**Addnewtestscenarios**asneeded
 
-## 📄 Files Overview
+##FilesOverview
 
-- `setup.bat` - Automated setup script
-- `run-tests.bat` - Interactive test runner
-- `run-tests-professional.bat` - Professional test execution
-- `tests/` - All test files organized by functionality
-- `utils/helpers.ts` - Common test utilities and page objects
-- `playwright.config.ts` - Comprehensive test configuration
-- `.env.example` - Environment variables template
+- `setup.bat`- Automatedsetupscript
+- `run- tests.bat`- Interactivetestrunner
+- `run- tests- professional.bat`- Professionaltestexecution
+- `tests/`- Alltestfilesorganizedbyfunctionality
+- `utils/helpers.ts`- Commontestutilitiesandpageobjects
+- `playwright.config.ts`- Comprehensivetestconfiguration
+- `.env.example`- Environmentvariablestemplate
 
----
+--- 
 
-**Happy Testing! 🎉**
+*ProfessionalfrontendautomationframeworkforReactNative,TypeScript,andNext.jsapplications.*
+- []**Cross- platformmobile**testing(iOS/Android)
+- []**Realdevicetesting**integration
 
-*Professional frontend automation framework for React Native, TypeScript, and Next.js applications.*
-- [ ] **Cross-platform mobile** testing (iOS/Android)
-- [ ] **Real device testing** integration
+###MobileAppTesting
+- []**ReactNativeapp**automationwithDetox
+- []**iOSsimulator**testing
+- []**Androidemulator**testing
+- []**Appstoredeployment**validation
 
-### Mobile App Testing
-- [ ] **React Native app** automation with Detox
-- [ ] **iOS simulator** testing
-- [ ] **Android emulator** testing
-- [ ] **App store deployment** validation
+##Support&Contribution
 
-## 📞 Support & Contribution
+###GettingHelp
+- Checkexistingtestsforexamples
+- ReviewPlaywrightdocumentation
+- Openissuesforbugsorfeaturerequests
 
-### Getting Help
-- Check existing tests for examples
-- Review Playwright documentation
-- Open issues for bugs or feature requests
+###Contributing
+1.Forktherepository
+2.Createafeaturebranch
+3.Addtestsfornewfunctionality
+4.Submitapullrequest
 
-### Contributing
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Submit a pull request
+##License
 
-## 📝 License
+ThisprojectislicensedundertheMITLicense- seetheLICENSEfilefordetails.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+--- 
 
----
 
-**Happy Testing! 🎉**
 
-Built with ❤️ for reliable web automation testing of Rebet.app

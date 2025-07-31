@@ -28,6 +28,7 @@ test.describe('Rebet Website Content Validation', () => {
           break;
         }
       } catch (error) {
+        console.log('Error checking indicator:', error);
         // Continue checking other indicators
       }
     }

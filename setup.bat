@@ -29,7 +29,7 @@ if not exist .env (
 )
 
 echo.
-echo ✅ Setup completed successfully!
+echo Setup completed successfully!
 echo.
 echo Available commands:
 echo   npm test              - Run all tests

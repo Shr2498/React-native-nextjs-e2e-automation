@@ -138,7 +138,7 @@ test.describe('Rebet Performance Tests', () => {
       expect(contentFound).toBeTruthy();
     } catch (pageError) {
       // If page fails to load completely, that's also acceptable behavior for network failure test
-      console.log(`✅ Network failure handled gracefully (page load failed as expected): ${String(pageError)}`);
+      console.log(`Network failure handled gracefully (page load failed as expected): ${String(pageError)}`);
     }
   });
 });
