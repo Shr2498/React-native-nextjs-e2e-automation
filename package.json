@@ -16,8 +16,11 @@
     "lint:fix": "eslint . --ext .js,.ts --fix",
     "format": "prettier --write \"**/*.{js,ts,json,md}\"",
     "type-check": "tsc --noEmit",
-    "install:browsers": "playwright install",
-    "install:deps": "playwright install-deps"
+    "install:browsers": "playwright install --with-deps",
+    "install:deps": "playwright install-deps",
+    "validate:ci": "node scripts/validate-ci.js",
+    "ci:setup": "npm ci && npm run install:browsers",
+    "ci:test": "npm run validate:ci && npm test"
   },
   "dependencies": {
     "@playwright/test": "^1.40.0",
